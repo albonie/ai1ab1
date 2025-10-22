@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 16px;
+    background-color: #0f1115;
+    color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+a { color: #7dd3fc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header, main, footer {
+    max-width: 1000px;
+    margin: 0 auto 16px auto;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    background-color: #111827;
+    padding: 18px;
+}
+
+header {
+    background-image: url("assets/beaver.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -120px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-size: 32px;
+    border-bottom: 2px solid #7dd3fc;
+    padding-bottom: 6px;
+}
+
+h2 {
+    margin: 0 0 8px 0;
+    color: #e2e8f0;
+    font-size: 22px;
+}
+
+h3 {
+    margin: 10px 0 6px 0;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+p { margin: 10px 0; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+}
+
+main ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+main li { margin: 6px 0; }
+
+main { text-align: center; }
+
+.card {
+    display: inline-block;
+    width: 48%;
+    max-width: 520px;
+    margin: 8px;
+    vertical-align: top;
+    background-color: #0b1220;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 14px;
+    text-align: left;
+}
+
+.card h2 { text-align: center; }
+
+main h1, main h2, main h3, main p, main ul, main li { text-align: left; }
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer li {
+    background-color: #0b1220;
+    border: 1px solid #1e293b;
+    color: #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+        max-width: none;
+        margin: 8px 0;
+    }
+    footer ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
